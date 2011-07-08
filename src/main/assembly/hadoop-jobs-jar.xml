@@ -1,0 +1,24 @@
+<assembly>
+  <id>hadoop-jobs</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>lib</outputDirectory>
+      <useProjectArtifact>false</useProjectArtifact>
+      <unpack>false</unpack>
+      <scope>runtime</scope>
+    </dependencySet>
+  </dependencySets>
+  <fileSets>
+    <fileSet>
+      <directory>${basedir}/target/classes</directory>
+      <outputDirectory>/</outputDirectory>
+      <excludes>
+        <exclude>*.jar</exclude>
+      </excludes>
+    </fileSet>
+  </fileSets>
+</assembly>
